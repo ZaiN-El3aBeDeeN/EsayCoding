@@ -1,0 +1,113 @@
+    /* Enhanced book table page styles */
+    .book_section {
+      padding: 60px 0;
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    }
+    
+    .book_section h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #333;
+      text-align: center;
+      position: relative;
+      padding-bottom: 20px;
+    }
+    
+    .book_section h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 2px;
+    }
+    
+    .book_form {
+      background: red;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .book_form label {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    
+    .book_form input,
+    .book_form select {
+      border: 2px solid #090808 !important;
+      border-radius: 8px !important;
+      padding: 12px 15px !important;
+      transition: all 0.3s ease !important;
+      font-size: 15px !important;
+    }
+    
+    .book_form input:focus,
+    .book_form select:focus {
+      border-color: #667eea !important;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+    }
+    
+    .book_form button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      color: black !important;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      width: 100%;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    
+    .book_form button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+      color: blue;
+    }
+    
+    #googleMap {
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    
+
+    /* Theme Toggle Button */
+    .theme-toggle-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      color: black !important;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .theme-toggle-btn:hover {
+      transform: scale(1.1) rotate(20deg);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    body.dark-mode .theme-toggle-btn {
+      background: linear-gradient(135deg, #000000 0%, #19547b 100%);
+    }
